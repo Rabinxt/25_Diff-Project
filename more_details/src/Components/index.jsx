@@ -13,7 +13,7 @@ export default function Accordian(){
                 data.map(dataItem => <div className="item">
                     <div className="title">
                         <h3>{dataItem.question}</h3>
-                        <span>+</span>
+                        <span>+</span> 
                     </div>
                 </div>)
                 : <div>No Data Present</div>
