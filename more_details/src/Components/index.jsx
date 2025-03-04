@@ -1,5 +1,5 @@
 import { useState } from "react"
-import data from "./data.jsx";
+import data from "./accordian/data"
 
 
 export default function Accordian(){
