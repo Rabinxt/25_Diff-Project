@@ -1,23 +1,28 @@
 import { useState } from "react"
-import data from "./accordian/data"
+import data from "./accordian/data.js"
+import "./accordian/style.css"
 
 
-export default function Accordian(){
 
-    const [selected , setSelected] = useState(null);
+export default function Accordian() {
 
-     return <div className="wrapper">  
+    const [selected, setSelected] = useState(null);
+
+    return <div className="wrapper">
         <div className="accordian">
             {
-                data && data.length > 0 ? 
-                data.map(dataItem => <div className="item">
-                    <div className="title">
-                        <h3>{dataItem.question}</h3>
-                        <span>+</span> 
-                    </div>
-                </div>)
-                : <div>No Data Present</div>
+                data && data.length > 0 ?
+                    data.map(dataItem => <div className="item">
+                        <div className="title">
+                            <h3>{dataItem.question}</h3>
+                            <span>+</span>
+                        </div>
+                    </div>)
+                    : <div>No Data Present</div>
+
             }
-        </div>
-            </div>
+
+        </div>   
+
+    </div>
 }
