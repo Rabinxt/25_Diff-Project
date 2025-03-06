@@ -1,6 +1,6 @@
 import { useState } from "react"
-import data from "./accordian/data.js"
-import "./accordian/style.css"
+import data from "./accordian/data.jsx"
+
 
 
 
@@ -8,7 +8,7 @@ export default function Accordian() {
 
     const [selected, setSelected] = useState(null);
 
-    
+
 
     return <div className="wrapper">
         <div className="accordian">
@@ -24,7 +24,7 @@ export default function Accordian() {
 
             }
 
-        </div>   
+        </div>
 
     </div>
 }
