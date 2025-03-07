@@ -1,5 +1,5 @@
 import { useState } from "react"
-import data from "./accordian/data.jsx"
+import data from "./data.jsx"
 
 
 
