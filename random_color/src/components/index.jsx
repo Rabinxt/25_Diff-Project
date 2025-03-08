@@ -1,19 +1,11 @@
 import React from 'react'
 import { useState } from 'react';
 
-const Index = () => {
+const RandomColor = () => {
     const [color, setColor] = useState('#000000');
     const [colorType , setColorType] = useState("HEX");
     return (
-        <div className="container" style={{
-            backgroundColor: color,
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-            height: "100vh",
-            color: "white"
-        }}>
+        <div className="container">
             <button>Create HEX color</button>
             <button>Create RGB color</button>
             <button>Generate Random Color</button>
@@ -21,4 +13,4 @@ const Index = () => {
     )
 }
 
-export default Index
+export default RandomColor;

@@ -1,16 +1,14 @@
-import { useState } from "react"
-import data from "./data.jsx"
+import React from 'react'
+import { useState } from 'react';
+import data from './data';
 
-
-
-
-export default function Accordian() {
-
+const Accordian = () => {
     const [selected, setSelected] = useState(null);
 
 
 
     return <div className="wrapper">
+        <h1>Accordian</h1>
         <div className="accordian">
             {
                 data && data.length > 0 ?
@@ -21,10 +19,10 @@ export default function Accordian() {
                         </div>
                     </div>)
                     : <div>No Data Present</div>
-
             }
-
         </div>
-
     </div>
 }
+
+export default Accordian;
+

@@ -1,5 +1,5 @@
 import React from 'react'
-import Accordian from './Components/accordian/'
+import Accordian from './Components/accordian/index.jsx'
 
 const App = () => {
   return (
