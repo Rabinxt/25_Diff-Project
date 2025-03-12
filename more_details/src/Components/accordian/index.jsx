@@ -1,12 +1,9 @@
 import React from 'react'
 import { useState } from 'react';
-import data from './data';
+import data from './data.jsx';
 
 const Accordian = () => {
     const [selected, setSelected] = useState(null);
-
-
-
     return <div className="wrapper">
         <h1>Accordian</h1>
         <div className="accordian">
@@ -18,7 +15,7 @@ const Accordian = () => {
                             <span>+</span>
                         </div>
                     </div>)
-                    : <div>No Data Present</div>
+                    :<div>No Data Present</div>
             }
         </div>
     </div>
