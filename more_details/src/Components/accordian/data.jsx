@@ -17,4 +17,5 @@ const data = [
       answer: "The user wants to start a small clothing brand startup in Kathmandu without government procedures.",
     },
   ];
+  export default data;
   
