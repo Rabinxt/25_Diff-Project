@@ -1,0 +1,26 @@
+.StarRating {
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.StarRating svg {
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.active {
+    color: gold;
+    transform: scale(1.2);
+}
+
+.inactive {
+    color: gray;
+}
+
+.StarRating svg:hover {
+    transform: scale(1.3);
+    color: orange;
+}
