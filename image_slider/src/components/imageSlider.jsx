@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from 'react-icons/bs';
+import { BsArrowLeftCircleFill, BsArrowRightCircleFill    } from 'react-icons/bs';
 
 const ImageSlider = ({ url, limit = 5, page = 1 }) => {
     const [images, setImages] = useState([])
@@ -28,7 +28,7 @@ const ImageSlider = ({ url, limit = 5, page = 1 }) => {
 
     useEffect(() => {
         if (url !== '') fetchImages(url)
-    }, [url])
+    }, [url]) 
     if (loading) {
         return <div className="message">Loading</div>
     }
@@ -48,7 +48,7 @@ const ImageSlider = ({ url, limit = 5, page = 1 }) => {
                             src={imageItem.download_url} 
                             alt={imageItem.download_url} className='current-image'/>
                         ))
-                :null}
+                :null   }
                 <BsArrowRightCircleFill className='arrow arrow-right' />
                 <span className="circle-indicators">
                     {
