@@ -22,7 +22,7 @@ const ImageSlider = ({ url, limit = 5, page = 1 }) => {
         }
         finally{
             setloading(false);
-        }
+        }  
     }
 
 
