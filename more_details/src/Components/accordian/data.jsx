@@ -1,5 +1,3 @@
-import React from 'react';
-
 const data = [
     {
       id: '1',
@@ -41,3 +39,6 @@ const data = [
       question: "What is the user's approach to learning Django?",
       answer: "The user prefers a beginner-friendly 30-day detailed Django roadmap and does not use a virtual environment while learning.",
     },
+]
+
+export default data;

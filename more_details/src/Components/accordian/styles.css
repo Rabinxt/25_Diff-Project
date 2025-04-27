@@ -1,7 +1,10 @@
 .wrapper {
     max-width: 600px;
+    min-width: 600px;
     margin: 20px auto;
+    margin-left: 400px;
     font-family: Arial, sans-serif;
+    position: absolute;
 }
 
 h1 {
@@ -10,9 +13,11 @@ h1 {
 }
 
 .accordian {
+    max-width: 500px;
     border: 1px solid #ccc;
     border-radius: 8px;
     overflow: hidden;
+    position: absolute;
 }
 
 .item {
