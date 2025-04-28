@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { BsArrowLeftCircleFill, BsArrowRightCircleFill    } from 'react-icons/bs';
+import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from 'react-icons/bs';
 
 const ImageSlider = ({ url, limit = 5, page = 1 }) => {
     const [images, setImages] = useState([])
@@ -18,17 +18,17 @@ const ImageSlider = ({ url, limit = 5, page = 1 }) => {
             }
         } catch (e) {
             setErrorMsg(e.message);
-            
+
         }
-        finally{
+        finally {
             setloading(false);
-        }  
+        }
     }
 
 
     useEffect(() => {
         if (url !== '') fetchImages(url)
-    }, [url]) 
+    }, [url])
     if (loading) {
         return <div className="message">Loading</div>
     }
@@ -43,20 +43,20 @@ const ImageSlider = ({ url, limit = 5, page = 1 }) => {
                 {
                     images && images.length ?
                         images.map((imageItem) => (
-                            <img 
-                            key={imageItem.id} 
-                            src={imageItem.download_url} 
-                            alt={imageItem.download_url} className='current-image'/>
+                            <img
+                                key={imageItem.id}
+                                src={imageItem.download_url}
+                                alt={imageItem.download_url} className='current-image' style={{width:"500px"}} />
                         ))
-                :null   }
+                        : null}
                 <BsArrowRightCircleFill className='arrow arrow-right' />
                 <span className="circle-indicators">
                     {
-                        images && images.length?
-                        images.map((_,index) =>(
-                            <button key={index} className='current-indicator'></button>
-                        ))
-                    :null}
+                        images && images.length ?
+                            images.map((_, index) => (
+                                <button key={index} className='current-indicator'></button>
+                            ))
+                            : null}
                 </span>
             </div>
         </div>
